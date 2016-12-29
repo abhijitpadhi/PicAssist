@@ -9814,3 +9814,17 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.title-image {
+  height: 250%;
+  margin-top: -30px;
+  width: auto;
+}
+
+ion-content {
+  background-color: #222222;
+}
+
+.tab-item {
+  max-width: none !important;
+}
