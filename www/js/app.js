@@ -1,4 +1,4 @@
-angular.module('PicAssist', ['ionic', 'controllers', 'services'])
+angular.module('PicAssist', ['ionic', 'controllers', 'services', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
