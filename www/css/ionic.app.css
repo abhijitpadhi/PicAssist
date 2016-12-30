@@ -9828,3 +9828,31 @@ ion-content {
 .tab-item {
   max-width: none !important;
 }
+
+.item {
+  border: none !important;
+  background-color: #222222 !important;
+}
+
+.item-content, item-complex {
+  padding: 0 !important;
+  background-color: #222222 !important;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagePlayer {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+

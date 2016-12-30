@@ -2,19 +2,25 @@
 	view-title="<img class='title-image' 
 				src='img/Inspiration.png'/>" >
 	<ion-content has-bouncing="true">
-		<ion-list>
+		<ion-list show-delete="data.showDelete">
+			<ion-item ng-repeat="photo in photos">
+				<img ng-src="{{photo.image}}" style="width: 100%; height: auto;" />
+				<ion-delete-buttion class="ion-minus-circled" ng-click="onPhotoDelete(photo)"> 
+				</ion-delete-buttion>
+			</ion-item>
+
 		</ion-list>
 		<!-- I'will do something cool soon enough! -->
 	</ion-content>
 
 	<ion-footer-bar class="bar-assertive">
-		<a class="tab-item">
+		<a class="tab-item" ng-click="data.showDelete = !data.showDelete">
 			<i class="icon ion-ios-minus-outline"></i>
 		</a>
 		<a class="tab-item">
 			<i class="icon ion-ios-camera"></i>
 		</a>
-		<a class="tab-item">
+		<a class="tab-item" ng-click="openModal()">
 			<i class="icon ion-ios-play"></i>
 		</a>
 
